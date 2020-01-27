@@ -1,0 +1,7 @@
+.list_panel{
+    margin-top: 2rem;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
