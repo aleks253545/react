@@ -26,7 +26,7 @@ const SearchPanel=(props)=>{
             <option value="ruby">ruby</option>
             <option value="c++">c++</option>
             <option value="c#">c#</option>
-            <option value="phython">phython</option>
+            <option value="python">python</option>
             <option value="java">java</option>
             <option value="go">go</option>
             <option value="haskel">haskel</option>
