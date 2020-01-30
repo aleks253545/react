@@ -1,14 +1,10 @@
-import React from 'react'
-import ReactDom from 'react-dom'
+import React from 'react';
 import s from './footer.module.css';
 
 
-const Footer =(props)=>{
-
-    return(
-        <footer className={s.footer}>
-            <span className={s.footer__text}>copyright @lodossteam 2018</span>
-        </footer>
-    )
-}
-export default Footer
+const Footer = () => (
+  <footer className={s.footer}>
+    <span className={s.footer__text}>copyright @lodossteam 2018</span>
+  </footer>
+);
+export default Footer;
