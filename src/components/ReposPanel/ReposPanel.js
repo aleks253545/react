@@ -11,15 +11,19 @@ const ReposPanel = (props) => {
     renderRepos.push(props.repositories[i]);
   }
   if (props.display === 'line') {
-    repos = renderRepos.map((item) =>
-    <ReposLineContainer key={item.id} item={item} tag={props.tag} />);
+    repos = renderRepos.map((item) => <ReposLineContainer key={item.id} item={item} tag={props.tag} />);
   } else if (props.display === 'block') {
-    repos = renderRepos.map((item) =>
-      <ReposBlockContainer key={item.id} item={item} tag={props.tag} />);
+    repos = renderRepos.map((item) => <ReposBlockContainer key={item.id} item={item} tag={props.tag} />);
   }
   if (renderRepos.length > 0) {
-    btnMore = <button className={s.btn_more} onClick={() =>
-      props.ShowMoreRepos()}>Show more</button>;
+    btnMore = (
+      <button
+        className={s.btn_more}
+        onClick={() => props.ShowMoreRepos()}
+      >
+Show more
+      </button>
+    );
   }
   if (props.repositories.length === 0) {
     noFound = (

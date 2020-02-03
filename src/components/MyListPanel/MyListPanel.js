@@ -7,11 +7,9 @@ import ReposBlockContainer from '../ReposBlock/ReposBlockContainer';
 const ReposPanel = (props) => {
   let repos;
   if (props.display === 'line') {
-    repos = props.repositories.map((item) => 
-    <ReposLineContainer key={item.id} item={item} tag={props.tag} />);
+    repos = props.repositories.map((item) => <ReposLineContainer key={item.id} item={item} tag={props.tag} />);
   } else if (props.display === 'block') {
-    repos = props.repositories.map((item) =>
-    <ReposBlockContainer key={item.id} item={item} tag={props.tag} />);
+    repos = props.repositories.map((item) => <ReposBlockContainer key={item.id} item={item} tag={props.tag} />);
   }
 
   return (

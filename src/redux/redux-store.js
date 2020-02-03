@@ -1,7 +1,7 @@
-import { createStore, combineReducers,applyMiddleware } from "redux";
-import searchReducer from './search-reducer';
+import { createStore, combineReducers, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
+import searchReducer from './search-reducer';
 
-let reducers=combineReducers({searchPage:searchReducer});
-let store=createStore(reducers,applyMiddleware(thunk));
-export default store; 
+const reducers = combineReducers({ searchPage: searchReducer });
+const store = createStore(reducers, applyMiddleware(thunk));
+export default store;
