@@ -8,8 +8,8 @@ let HeaderApp=(props)=>{
         <header className={s.header_page}>
             <img src={logo} class={s.header_logo}></img>
             <ul className={s.header_list}>
-            <NavLink to='/search'><li className={s.header_list_item}>Search</li></NavLink>
-            <NavLink to='/my-list'><li className={s.header_list_item}>My list</li></NavLink>
+            <NavLink to='/search' ><li data-route='search' className={s.header_list_item}>Search</li></NavLink>
+            <NavLink to='/my-list' ><li data-route='my-list' className={s.header_list_item}>My list</li></NavLink>
             </ul>
         </header>
     )

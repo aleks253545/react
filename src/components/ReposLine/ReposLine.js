@@ -15,7 +15,7 @@ const ReposLine =(props)=>{
     return(
         <div className={s.repos}>
                 <input id={props.item.id} className={s.checkbox} type="checkbox" checked={props.item.like} onChange={changeCheckboxLike}/>
-                <label className={s.label} for={props.item.id} ><div className={s.mark} ></div></label>
+                <label className={s.label} for={props.item.id} data-type='changeLike'><div className={s.mark} ></div></label>
             <div className={s.info}>
                 <h3 className={s.name}>{props.item.name}</h3>
                 <span className={s.subname}>{props.item.description}</span>

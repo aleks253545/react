@@ -18,7 +18,7 @@ const SearchPanel=(props)=>{
         <select className={s.search_panel_select} >
             <option value="grapefruit">Repositories</option>
         </select>
-        <select className={s.search_panel_select} onChange={onChangeSelect} ref={selectRef}>
+        <select data-type='language' className={s.search_panel_select} onChange={onChangeSelect} ref={selectRef}>
             <option value="JavaScript">JavaScript</option>
             <option value="css">css</option>
             <option value="Html">Html</option>
@@ -31,8 +31,8 @@ const SearchPanel=(props)=>{
             <option value="go">go</option>
             <option value="haskel">haskel</option>
         </select>
-        <input type='text' className={s.search_panel_input} ref={inputRef} value={props.filterTag} onChange={onChangeInput}></input>
-        <button className={s.search_panel_button}  onClick={downloadRepos}>Search</button>
+        <input data-type='tag' type='text' className={s.search_panel_input} ref={inputRef} value={props.filterTag} onChange={onChangeInput}></input>
+        <button type="submit" className={s.search_panel_button}  onClick={downloadRepos}>Search</button>
         </div>
     )
 }
