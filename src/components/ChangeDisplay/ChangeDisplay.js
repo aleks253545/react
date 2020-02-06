@@ -11,8 +11,8 @@ const ChangeDisplay=(props)=>{
         props.changeDisplay('line')
     }
     return(<div className={s.change_panel}> 
-        <img src={tile} data-change='block' onClick={ChangeBlock}></img> 
-        <img src={line} data-change='line' onClick={ChangeLine}></img> 
+        <img src={tile} data-change='block' onClick={ChangeBlock} alt='block'></img> 
+        <img src={line} data-change='line' onClick={ChangeLine} alt='line'></img> 
         </div>)
 }
 export default ChangeDisplay;
