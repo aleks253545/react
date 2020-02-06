@@ -28,7 +28,7 @@ const ReposBlock =(props)=>{
                     {tag}
                 </div>
             </div>
-            <button className={like} onClick={()=>props.checkLike(props.item.id)}>{text}</button>
+            <button data-type='changeLike'  className={like} onClick={()=>props.checkLike(props.item.id)}>{text}</button>
         </div>
     )
 }
